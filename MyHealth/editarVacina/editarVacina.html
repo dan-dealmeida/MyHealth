@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Vacina</title>
+    <link rel="stylesheet" href="/cssReset/css-reset.css">
+    <link rel="stylesheet" href="editarVacina-style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/syringe-solid.svg">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+<body>
+    <header>
+        <nav class = "heading-logo">
+                <a href="index.html">
+                    <img id = "logo-img" src="/images/logo.png" alt="logo for vaccination website">
+                </a>
+                <a href="/index/index.html">
+                    <h1 id = "logo-H1">My Health</h1>
+                </a>
+                
+        </nav>
+
+        
+        <nav class="heading-buttons">
+            
+            <a href="/home/home.html" class="menu_button">Minhas Vacinas</a>
+            <a href="/index/index.html" class="menu_button">Logout</a>
+        </nav> 
+
+    </header>
+
+
+    <main >
+        
+        <form>
+            <div class="delete-button form-group">
+                <button type="button" id="send-button" class="red_button">Exluir</button>
+            </div>
+
+            <div class="form-date1 form-group">                            
+                <label for="vdate">Data de vacinação </label>
+                <input type="date" id="vdate" name="datavacinacao">
+            </div>
+
+            <div class="form-name form-group">                            
+                <label for="vname">Vacina </label>
+                <input type="text" id="vname">
+            </div>
+
+            <div class="form-dose form-group">
+                <label for="vname">Dose </label>   
+
+                <input type="radio" id="1a.dose" name="dose" value="1a.dose">
+                <label class="form-control" for="1a.dose">1a. Dose</label><br>
+
+                <input type="radio" id="2a.dose" name="dose" value="2a.dose">
+                <label class="form-control" for="2a.dose">2a. Dose</label><br>
+
+                <input type="radio" id="3a.dose" name="dose" value="3a.dose">
+                <label class="form-control" for="3.dose">3a. Dose</label>
+
+                <input type="radio" id="reforco" name="dose" value="reforco">
+                <label class="form-control" for="3.dose">Reforço</label>
+
+                <input type="radio" id="doseUnica" name="dose" value="doseUnica">
+                <label class="form-control" for="doseUnica">Dose única</label>
+            </div>
+            <div class="form-image form-group">                            
+                <label for="file-upload" class="file-upload">
+                    Comprovante de Vacina
+                </label>
+                <div class="chose-file">
+                    <input type="file" title=" " id="image" name="image" accept="image/png, image/jpeg">
+                </div>
+            </div>
+
+            <div class="form-date2 form-group">                            
+                <label for="vdate">Próxima vacinação </label>
+                <input type="date" id="vdate2" name="datavacinacao2">
+            </div>
+            <div class="send-button form-group">
+                <button type="submit" id="send-button" class="my_button">Editar</button>
+            </div>
+    
+
+        </form>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+    <script type="module" src="editarVacina-script.js"></script>
+
+
+</body>
+</html>

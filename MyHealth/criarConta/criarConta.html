@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Vacina</title>
+    <link rel="stylesheet" href="/cssReset/css-reset.css">
+    <link rel="stylesheet" href="criarConta-style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/syringe-solid.svg">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+</head>
+<body>
+    <header>
+        <nav class = "heading-logo">
+                <a href="/index/index.html">
+                    <img id = "logo-img" src="/images/logo.png" alt="logo for vaccination website">
+                </a>
+                <a href="/index/index.html">
+                    <h1 id = "logo-H1">My Health</h1>
+                </a>
+        </nav>
+        <nav class="heading-buttons">
+            
+            <a href="/entrar/entrar.html" class="menu_button">LOGIN</a>
+            
+        </nav> 
+
+
+    </header>
+
+
+    <main >
+        
+        <form>
+            <div class="form-name form-group">                            
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-date1 form-group">                            
+                <label for="date">Data de Nacimento </label>
+                <input type="date" id="date" name="datanascimento" required>
+            </div>
+
+
+            <div class="form-sexo form-group">
+                <label for="sexo">Sexo </label>   
+
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label class="form-control" for="masculino">masculino</label><br>
+
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label class="form-control" for="feminino">feminino</label><br>
+            </div>
+
+            <div class="form-email form-group">
+                <label for="Email" class="form-group">Email</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+            
+            <div class="form-password form-group">  
+                <label for="Senha" class="form-group">Senha</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-password form-group">  
+                <label for="Senha" class="form-group">Repetir Senha</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <div class="send-button form-group">
+                <button type="submit" id="send-button" class="my_button">Cadastrar</button>
+            </div>
+    
+
+        </form>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+    <script type="module" src="criarConta-script.js"></script>
+    
+</body>
+</html>

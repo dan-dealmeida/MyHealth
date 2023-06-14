@@ -1,0 +1,181 @@
+
+body{
+    background-color: #ADD4D0;
+}
+
+a{
+  
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    font-size: 64px;
+    color: #419ED7;
+    font-family: 'Roboto','Times New Roman', Times, serif;
+  }
+
+header{
+  min-height: 87px;
+  background-color: #8FE1D9;
+  display: flex;
+  justify-content: space-between;
+  max-height: min-content;
+}
+.heading-logo{
+  display: flex;
+  width:max-content;
+  align-items: center;
+}
+
+#logo-H1{
+  font-size: 64px;
+  font-size: 48px;
+  font-family: 'Pacifico', 'Roboto','Times New Roman', Times, serif;
+  padding-left: 9px;
+}
+#logo-img{
+  width: 51px;
+  height: 51px;
+  padding-left: 16px;
+}
+.menu_button{
+    padding: 10px 25px;
+    border-style: none;
+    border-width: 1px;
+    margin-left: 20px;
+    background-color: #419ED7;
+    color: white;
+  
+}
+.my_button{
+  padding: 10px 25px;
+  border-style: none;
+  border-width: 1px;
+  margin-left: 20px;
+  background-color: #49B976;
+  color: white;
+
+}
+
+.heading-buttons{
+  display: flex;
+  max-height: min-content;
+  align-items: center;
+  width: max-content;
+  justify-content: center;
+  padding:  50px ;
+}
+
+
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.col{
+    background-color: aliceblue;
+    width: 30%;
+    margin-bottom: 40px;
+    border-radius: 13px;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+/*Vaccine card info: */
+/*vaccine name*/
+h2{
+  text-align: center;
+  font-family: 'Roboto','Times New Roman', Times, serif;
+  color: #419ED7;
+  font-size: 35px;
+  padding: 9px 2px;
+}
+/*vaccine dose*/
+#dose{
+  align-content: center;
+  text-align: center;
+  background-color: #419ED7;
+  color: white;
+  padding: 9px 2px;
+  margin: 10px 64px;
+}
+/*vaccine date*/
+.col p{
+  text-align: center;
+    color: grey;
+    font-size: 0.875rem;
+    padding-left: 30px;
+    line-height: 1.25;
+    padding: 2px 5px;
+    margin: 2px;
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*vaccine next date*/
+#next_date{
+  text-align: end;
+  color: red;
+}
+/*-----------------------------*/
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+input{
+  width: 100%;
+  height: 32px;
+  font-size: 20px;
+  border: none;
+  
+}
+.icon {
+  color: grey;
+  padding-top: 4px;
+}
+.search {
+  margin: 20px;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
+  background-color: white;
+}
+.new_vacine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  50px ;
+}
+/*Tablet View*/
+@media (max-width: 768px){
+    .col{
+        width: 45%;
+    }
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  }
+  /*Mobile View*/
+  @media (max-width: 400px){
+    .col{
+        width: 100%;
+    }
+  }
